@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <groups>
+      <run>
+        <include name="smoke.*"/>
+        <include name="functional.*"/>
+        <include name="regression"/>
+        <exclude name="functional5"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="hw4.PracticeTestNgHW">
+        <methods>
+          <include name="personalinfo"/>
+          <include name="enterFirstName"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hw4.PracticeTestNgHW -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite2] -->

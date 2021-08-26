@@ -1,4 +1,4 @@
-package hw3;
+package hw4;
 
 import java.util.concurrent.TimeUnit;
 
@@ -43,7 +43,7 @@ Assert.assertEquals(ExpectedURL,ActualURL );
 System.out.println("Assert Passed");
 }
 
-@Test (priority=2,invocationCount = 3, groups = {"regression","functional2"})
+@Test (priority=2, groups = {"regression","functional2"})
 public void enteremail() {
 	//CSS rule 2 tagName#id-value
 	driver.findElement(By.cssSelector("input#email_create")).sendKeys("jsmith5678@yahoo.com");
@@ -116,7 +116,7 @@ Assert.assertEquals(Expected,Actual);
 System.out.println("password Assert Passed");
 }
 
-@Test (priority=9)
+/*@Test (priority=9)
 public void selectdays() {
 	WebElement drpdays=driver.findElement(By.id("days"));
 	//Ex.until(ExpectedConditions.elementToBeClickable(drpdays));
@@ -143,7 +143,7 @@ public void selectyears() {
 	Years.selectByVisibleText("2021");
 	String Option=Years.getFirstSelectedOption().getText();
 	Assert.assertEquals("2021 ",Option );
-}
+}*/
 
 @Test (priority=12)
 public void checkNewsletter() {
@@ -263,7 +263,7 @@ public void entermobilephone() {
 		}
 }	
 
-@Test (priority=21)
+@Test (priority=22)
 public void enteraddressAlias() {
 	//CSS rule 1 tagName[attribute='value']
 	WebElement addressAlias=driver.findElement(By.cssSelector("input[id='alias']"));

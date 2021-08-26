@@ -3,31 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hw3.PracticeTestNgHW">
+      <class name="hw4.PracticeTestNgHW">
         <methods>
-          <include name="enterZipcode"/>
-          <include name="entermobilephone"/>
-          <include name="enterPassword"/>
-          <include name="selectmonths"/>
-          <include name="selectCountry"/>
-          <include name="enterLastName"/>
-          <include name="enterCompany"/>
-          <include name="enteradditionalInfo"/>
-          <include name="selectyears"/>
-          <include name="enterAddress"/>
           <include name="selectdays"/>
-          <include name="enteraddressAlias"/>
-          <include name="selectState"/>
-          <include name="selectradio"/>
-          <include name="setup"/>
-          <include name="checkNewsletter"/>
-          <include name="checkReceiveoffers"/>
-          <include name="enterFirstName"/>
           <include name="closetab"/>
-          <include name="personalinfo"/>
-          <include name="enterCity"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- hw3.PracticeTestNgHW -->
+      </class> <!-- hw4.PracticeTestNgHW -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
